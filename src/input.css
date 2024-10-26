@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins";
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: extrabold;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../public/fonts/Poppins/Poppins-ExtraBold.ttf") format("woff2");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../public/fonts/Poppins/Poppins-Bold.ttf") format("woff2");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: semiBold;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../public/fonts/Poppins/Poppins-SemiBold.ttf") format("woff2");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("../public/fonts/Poppins/Poppins-Regular.ttf") format("woff2");
+  }
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  /* padding-bottom: 64px !important; */
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-current {
+  color: #111827 !important;
+}
+.swiper-pagination-total {
+  color: #9ca3af;
+}
+
+.swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-next:after {
+  content: "";
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #414141;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
