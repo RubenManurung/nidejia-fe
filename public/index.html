@@ -8,7 +8,7 @@
     content="Temukan kost ideal Anda secara mudah dan cepat di platform pencarian kost online. Pilih kost sesuai budget, lokasi, dan fasilitas yang diinginkan dengan berbagai pilihan terbaik di seluruh Indonesia. Dapatkan info lengkap dan mulai hunian nyaman sekarang!">
   <title>Nidejia</title>
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
-  <link href="./output.css" rel="stylesheet">
+  <link href="./css/output.css" rel="stylesheet">
 </head>
 
 <body class="relative bg-gradient-to-b from-20% from-[#010101] to-80% to-[#010101] xl:container mx-auto">
@@ -39,7 +39,7 @@
   </div>
 
 
-  <nav class="lg:hidden sticky top-[0px] bg-chinese-black z-50 absolute w-full">
+  <nav class="lg:hidden sticky top-[0px] bg-chinese-black absolute w-full z-10">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between py-4">
       <a href="#" class="flex items-center px-4 space-x-3 rtl:space-x-reverse">
         <img src="../public/images/nidejia-logo.svg" class="h-8" alt="Nidejia Logo" />
@@ -47,11 +47,13 @@
       </a>
       <button aria-labelledby="nav hamburger" aria-label="nav hamburger" name="nav-hamburger" id="nav-hamburger"
         class="w-[40px] group flex items-center justify-center mr-4 peer">
-        <div class="cursor-progress items-center justify-center">
+        <div class="items-center justify-center">
           <div class="space-y-1">
-            <span class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out "
+            <span
+              class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out translate-y-0 rotate-0"
               id="line1"></span>
-            <span class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out "
+            <span
+              class="block opacity-100 h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out "
               id="line2"></span>
             <span class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out  "
               id="line3"></span>
@@ -59,7 +61,7 @@
         </div>
       </button>
 
-      <div class=" hidden relative h-0 w-full lg:block lg:w-auto transition-all" id="navbar-default">
+      <div class="hidden relative w-full lg:block lg:w-auto transition-all" id="navbar-default">
         <ul
           class="font-medium flex flex-col gap-y-4 p-4 lg:p-0 mt-4 bg-chinese-black text-white lg:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-end md:border-0 lg:bg-white">
           <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#">Featured</a></li>
