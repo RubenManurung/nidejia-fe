@@ -45,23 +45,24 @@
         <img src="./images/nidejia-logo.svg" class="h-8" alt="Nidejia Logo" />
         <span class="self-center text-2xl text-white font-extrabold whitespace-nowrap text-white">Nidejia</span>
       </a>
-      <button aria-labelledby="nav hamburger" aria-label="nav hamburger" name="nav-hamburger" id="nav-hamburger"
-        class="w-[40px] group flex items-center justify-center mr-4 peer">
-        <div class="items-center justify-center">
+      <div class="peer items-center justify-center w-fit relative right-4">
+        <button aria-labelledby="nav hamburger" aria-label="nav hamburger" name="nav-hamburger" id="nav-hamburger"
+          class=" flex items-center justify-center group">
           <div class="space-y-1">
             <span
-              class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out translate-y-0 rotate-0"
+              class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45"
               id="line1"></span>
             <span
-              class="block opacity-100 h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out "
+              class="block group-hover:opacity-0 h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out "
               id="line2"></span>
-            <span class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out  "
+            <span
+              class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out group-hover:-translate-y-1.5 group-hover:-rotate-45"
               id="line3"></span>
           </div>
-        </div>
-      </button>
+        </button>
+      </div>
 
-      <div class="hidden h-0 relative w-full lg:block lg:w-auto transition-all" id="navbar-default">
+      <div class="hidden peer-hover:block h-0 relative w-full lg:block lg:w-auto transition-all" id="navbar-default">
         <ul
           class="font-medium flex flex-col gap-y-4 p-4 lg:p-0 mt-4 bg-chinese-black text-white lg:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-end md:border-0 lg:bg-white">
           <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#">Featured</a></li>
