@@ -670,6 +670,10 @@ html {
   z-index: 20;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -908,6 +912,10 @@ html {
 
 .w-\[100px\] {
   width: 100px;
+}
+
+.w-\[40\%\] {
+  width: 40%;
 }
 
 .max-w-screen-xl {
