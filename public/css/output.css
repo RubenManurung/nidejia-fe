@@ -650,6 +650,10 @@ html {
   top: 20px;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -660,6 +664,10 @@ html {
 
 .z-\[0\] {
   z-index: 0;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-1 {
@@ -778,6 +786,10 @@ html {
   margin-top: 50px;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -888,6 +900,14 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .max-w-screen-xl {
@@ -1257,6 +1277,10 @@ html {
   padding: 1px;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1332,6 +1356,16 @@ html {
   padding-bottom: 50px;
 }
 
+.px-\[75px\] {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1358,6 +1392,14 @@ html {
 
 .pt-\[64px\] {
   padding-top: 64px;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-center {
@@ -1976,8 +2018,16 @@ html {
     width: 88%;
   }
 
+  .xl\:w-full {
+    width: 100%;
+  }
+
   .xl\:max-w-\[60\%\] {
     max-width: 60%;
+  }
+
+  .xl\:max-w-7xl {
+    max-width: 80rem;
   }
 
   .xl\:border-r-\[1px\] {

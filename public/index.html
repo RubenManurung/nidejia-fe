@@ -12,9 +12,9 @@
 </head>
 
 <body class="relative bg-gradient-to-b from-20% from-[#010101] to-80% to-[#010101] xl:container mx-auto">
-  <div class="relative w-full flex justify-center">
+  <div class="sticky top-5 xl:top-[30px] z-20 w-full flex justify-center px-[75px]">
     <nav id="desktop-nav"
-      class="hidden xl:mx-auto lg:flex justify-between z-10 bg-chinese-black py-6 px-[30px] mx-4 lg:mx-auto rounded-[20px] fixed top-[20px] xl:top-[30px] lg:w-[92%] xl:w-[88%] 2xl:w-[90%]">
+      class="hidden xl:mx-auto lg:flex justify-between z-10 bg-chinese-black py-6 px-[30px] mx-4 lg:mx-auto rounded-[20px] w-full">
       <div class="flex items-center">
         <img src="./images/nidejia-logo.svg" alt="nidejia logo">
         <span class="text-2xl text-white font-extrabold ml-[10px]">Nidejia</span>
@@ -61,7 +61,7 @@
         </div>
       </button>
 
-      <div class="hidden relative w-full lg:block lg:w-auto transition-all" id="navbar-default">
+      <div class="hidden h-0 relative w-full lg:block lg:w-auto transition-all" id="navbar-default">
         <ul
           class="font-medium flex flex-col gap-y-4 p-4 lg:p-0 mt-4 bg-chinese-black text-white lg:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-end md:border-0 lg:bg-white">
           <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#">Featured</a></li>
@@ -96,7 +96,7 @@
                 class="w-fit h-fit text-dark-gray pl-[30px] pr-[20px] lg:pr-[108px] py-5 text-[12px] lg:text-base rounded-tl-full rounded-bl-full bg-chinese-black placeholder:text-dark-gray focus-visible:border-none focus:border-none focus:outline-none"
                 placeholder="Search by city or country...">
               <button
-                class="px-4 lg:px-6 py-0 bg-atomic-tangerine hover:bg-white rounded-tr-full rounded-br-full text-vanta-black text-base lg:text-[20px] hover:text-atomic-tangerine font-semibold">Explore</button>
+                class="px-3 lg:px-6 py-0 bg-atomic-tangerine hover:bg-white rounded-tr-full rounded-br-full text-vanta-black text-base lg:text-[20px] hover:text-atomic-tangerine font-semibold">Explore</button>
             </label>
           </form>
         </div>
@@ -866,25 +866,23 @@
         </ul>
       </div>
 
-      <div>
+      <div class="pr-4">
         <h2 class="font-semibold mb-3">Subscribe & Free Rewards</h2>
 
-        <div class="flex rounded-full pl-5 bg-white mb-[30px]">
+        <div class="flex rounded-full pl-2 bg-white mb-[30px]">
           <form class="flex">
             <label for="sms" class="flex">
               <img src="./images/sms.svg" alt="sms" width="20" height="17">
               <input id="sms" type="text"
-                class="mx-1 w-fit placeholder:text-[14px] text-[14px] focus-visible:border-none focus:border-none focus:outline-none placeholder:text-waterloo text-black"
+                class="px-1 w-fit placeholder:text-[14px] text-[14px] focus-visible:border-none focus:border-none focus:outline-none placeholder:text-waterloo text-black"
                 placeholder="Email Address">
             </label>
             <button type="submit"
-              class="px-2 lg:px-[24px] py-3 bg-atomic-tangerine hover:bg-vanta-black border-white rounded-full text-vanta-black font-semibold hover:text-atomic-tangerine text-[14px] md:text-base font-semibold">Subscribe</button>
+              class="p-2 lg:px-[24px] bg-atomic-tangerine hover:bg-vanta-black border-white rounded-full text-vanta-black font-semibold hover:text-atomic-tangerine text-[12px] md:text-base font-semibold">Subscribe</button>
           </form>
         </div>
 
         <div>
-
-
           <label for="language">
             <h2 class="font-semibold mb-3">Choose Language</h2>
             <select name="language" id="language" class="bg-transparent border-none text-white">
