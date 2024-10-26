@@ -1424,6 +1424,10 @@ html {
   padding-left: 0.5rem;
 }
 
+.pl-\[20px\] {
+  padding-left: 20px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2091,6 +2095,11 @@ html {
   .xl\:py-\[100px\] {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .xl\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .xl\:text-\[18px\] {
