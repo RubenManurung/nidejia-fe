@@ -76,5 +76,10 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     targetSection.scrollIntoView({
       behavior: 'smooth'
     });
+    checkbox.checked = false;
+    line1.classList.remove('rotate-45', 'translate-y-1.5');
+    line2.classList.remove('opacity-0');
+    line3.classList.remove('-rotate-45', '-translate-y-1.5');
+    navDefault.classList.add('hidden')
   });
 });
