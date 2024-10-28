@@ -21,19 +21,19 @@
       </div>
       <ul
         class="hidden md:flex text-[12px] lg:text-base font-semibold text-white gap-x-[15px] lg:gap-x-[30px] items-center">
-        <li class="hover:underline hover:cursor-pointer">Featured</li>
-        <li class="hover:underline hover:cursor-pointer">Categories</li>
-        <li class="hover:underline hover:cursor-pointer">Testimonials</li>
-        <li class="hover:underline hover:cursor-pointer">About</li>
+        <li class="hover:underline hover:cursor-pointer"><a href="#featured">Featured</a></li>
+        <li class="hover:underline hover:cursor-pointer"><a href="#categories">Categories</a></li>
+        <li class="hover:underline hover:cursor-pointer"><a href="#testimonials">Testimonials</a></li>
+        <li class="hover:underline hover:cursor-pointer"><a href="#about">About</a></li>
       </ul>
 
       <div class="hidden md:flex flex gap-x-3">
-        <button
+        <a href="#"
           class="px-2 lg:px-6 py-1 lg:py-3 text-[14px] lg:text-base bg-jet hover:bg-white rounded-full text-white hover:text-jet font-semibold">Sign
-          in</button>
-        <button
+          in</a>
+        <a href="#"
           class="px-2 lg:px-6 py-1 lg:py-3 text-[14px] lg:text-base bg-atomic-tangerine hover:bg-white rounded-full text-chinese-black hover:text-atomic-tangerine font-semibold">Sign
-          up</button>
+          up</a>
       </div>
     </nav>
   </div>
@@ -45,30 +45,27 @@
         <img src="./images/nidejia-logo.svg" alt="Nidejia Logo" width="35" height="35" />
         <span class="self-center text-2xl text-white font-extrabold whitespace-nowrap text-white">Nidejia</span>
       </a>
-      <div class="peer items-center justify-center w-fit relative right-4">
-        <button aria-labelledby="nav hamburger" aria-label="nav hamburger" name="nav-hamburger" id="nav-hamburger"
-          class=" flex items-center justify-center group">
+      <div class="items-center justify-center relative right-4">
+        <label for="check-hamburger">
+          <input id="check-hamburger" type="checkbox" class="absolute w-full h-full opacity-0">
           <div class="space-y-1">
-            <span
-              class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45"
+            <span class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out"
               id="line1"></span>
-            <span
-              class="block group-hover:opacity-0 h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out "
+            <span class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out "
               id="line2"></span>
-            <span
-              class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out group-hover:-translate-y-1.5 group-hover:-rotate-45"
+            <span class="block h-1 w-8 origin-center rounded-full bg-white transition-transform ease-in-out"
               id="line3"></span>
           </div>
-        </button>
+        </label>
       </div>
 
-      <div class="hidden peer-hover:block h-0 relative w-full lg:block lg:w-auto transition-all" id="navbar-default">
+      <div class="hidden h-0 relative w-full lg:block lg:w-auto transition-all" id="navbar-default">
         <ul
           class="font-medium flex flex-col gap-y-4 p-4 lg:p-0 mt-4 bg-chinese-black text-white lg:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-end md:border-0 lg:bg-white">
-          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#">Featured</a></li>
-          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#">Categories</a></li>
-          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#">Testimonials</a></li>
-          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#">About</a></li>
+          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#featured">Featured</a></li>
+          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#categories">Categories</a></li>
+          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#testimonials">Testimonials</a></li>
+          <li class="hover:underline hover:cursor-pointer font-semibold"><a href="#about">About</a></li>
         </ul>
       </div>
     </div>
@@ -107,7 +104,7 @@
   </div>
 
   <div class="relative px-4 lg:px-10 xl:px-[75px]">
-    <section class="relative xl:bottom-[70px] w-full flex justify-center">
+    <section id="about" class="relative xl:bottom-[70px] w-full flex justify-center">
       <div class="mt-[50px] lg:mt-0 bg-chinese-black py-[29px] rounded-[20px] relative xl:absolute w-full ">
         <ul
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-4 px-4 lg:px-0 justify-center lg:justify-between items-center last-of-type:border-none group w-full">
@@ -143,7 +140,7 @@
       </div>
     </section>
 
-    <section class="w-full h-full bg-black xl:mt-[100px]">
+    <section id="featured" class="w-full h-full bg-black xl:mt-[100px]">
       <h2 class="text-white font-bold text-[20px] xl:text-[28px] text-center pt-[64px]">Our Latest Deals</h2>
       <p class="text-chrome-aluminum text-center w-full xl:max-w-[60%] mx-auto text-[12px] xl:text-[18px] mb-[30px]">
         Explore the beauty
@@ -357,7 +354,7 @@
     </section>
   </div>
 
-  <section class="bg-chinese-black py-[50px] px-4 lg:px-10 xl:px-[75px]">
+  <section id="categories" class="bg-chinese-black py-[50px] px-4 lg:px-10 xl:px-[75px]">
     <div class="flex flex-col md:flex-row w-full justify-between items-center">
       <div class="flex flex-col items-center md:items-start">
         <h2 class="text-[20px] xl:text-[28px] font-bold text-white">Categories</h2>
@@ -573,7 +570,7 @@
     </div>
   </section>
 
-  <section class="px-4 lg:px-10 xl:px-[75px] mb-[100px]">
+  <section id="testimonials" class="px-4 lg:px-10 xl:px-[75px] mb-[100px]">
     <h2 class="text-white text-[20px] md:text-[28px] font-bold text-center">Happy Customers</h2>
     <p class="text-[14px] xl:text-[18px] text-chrome-aluminum text-center">We’d love to come back again
       soon</p>
